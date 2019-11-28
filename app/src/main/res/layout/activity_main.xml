@@ -13,6 +13,7 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-light"
         android:text="Cadastrar"
+        android:onClick="activityCadastro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnRecSenha"
         app:layout_constraintHorizontal_bias="0.5"
@@ -25,6 +26,7 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-light"
         android:text="Recuperar senha"
+        android:onClick="recuperarSenha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnLogin"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,7 +46,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnRecSenha" />
 
     <EditText
-        android:id="@+id/etLogin"
+        android:id="@+id/etSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -56,13 +58,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etSenha"
+        android:id="@+id/etLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@id/etLogin"
-        app:layout_constraintTop_toBottomOf="@id/etLogin" />
+        app:layout_constraintStart_toStartOf="@id/etSenha"
+        app:layout_constraintTop_toBottomOf="@id/etSenha" />
 </androidx.constraintlayout.widget.ConstraintLayout>
